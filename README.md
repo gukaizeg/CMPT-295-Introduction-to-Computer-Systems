@@ -1,2 +1,2 @@
 # Simon Fraser University
-# Introduction to Computer Systems CMPT 295
+Introduction to Computer Systems 
