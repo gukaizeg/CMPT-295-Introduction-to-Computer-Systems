@@ -1,0 +1,13 @@
+Name:GitHub 
+Hash:cd93ea0264130688855b1d939c05221198820402
+Timestamp=2022-10-14 22:08:08 +0000 
+## ********************FAILED********************
+
+****************************************
+## ********************SUCCESS********************
+### *****timeout 120 java -jar venus.jar ./test_files/test_sdot.s > ./out/test_sdot.out*****
+ ```
+```
+### *****diff ./out/test_sdot.out ./ref/test_sdot.out*****
+ ```
+```

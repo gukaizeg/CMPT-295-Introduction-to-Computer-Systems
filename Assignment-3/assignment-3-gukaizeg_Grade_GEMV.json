@@ -1,0 +1,63 @@
+{
+  "dot": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "gemv": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "read_matrix": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "simple0": {
+    "mark": 5,
+    "comment": "Program ran and output matched."
+  },
+  "simple1": {
+    "mark": 5,
+    "comment": "Program ran and output matched."
+  },
+  "simple2": {
+    "mark": 5,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input0": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input1": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input2": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input3": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input4": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input5": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input6": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input7": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "mnist-input8": {
+    "mark": 10,
+    "comment": "Program ran and output matched."
+  },
+  "userid": "GithubID:assignment-3-gukaizeg"
+}

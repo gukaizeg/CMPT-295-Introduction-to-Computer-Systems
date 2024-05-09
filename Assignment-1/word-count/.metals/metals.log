@@ -1,0 +1,5 @@
+[0m2021.02.17 17:17:36 INFO  Started: Metals version 0.9.10 in workspace '/Users/ashriram/Courses/CMPT295/Ass-C-Tree-Solution/word-count' for client vscode 1.53.2.[0m
+[0m2021.02.17 17:17:37 INFO  time: initialize in 0.65s[0m
+[0m2021.02.17 17:17:40 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.17 17:17:40 WARN  no build tool detected in workspace '/Users/ashriram/Courses/CMPT295/Ass-C-Tree-Solution/word-count'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.02.18 09:37:14 INFO  shutting down Metals[0m

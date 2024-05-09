@@ -1,0 +1,13 @@
+Address,Ins-Cycle,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
+0x0,addi x10 x0 2,IF,ID,EX,MEM,WB,,,,,,,,,,,,,,
+0x4,addi x6 x6 1,,IF,ID,EX,MEM,WB,,,,,,,,,,,,,
+0x8,beq x10 x6 20 <choice1>,,,IF,ID,EX,MEM,WB,,,,,,,,,,,,
+0xC,addi x6 x6 1,,,,IF,ID,EX,MEM,WB,,,,,,,,,,,
+0x10,beq x10 x6 16 <choice2>,,,,,IF,ID,EX,MEM,WB,,,,,,,,,,
+0x14,addi x6 x6 1,,,,,,IF,ID,,,,,,,,,,,,
+0x18,beq x10 x6 12 <choice3>,,,,,,,IF,,,,,,,,,,,,
+0x1C,jal x0 0x28 <end>,,,,,,,,,,,,,,,,,,,
+0x20,jal x0 0x28 <end>,,,,,,,,IF,ID,EX,MEM,WB,,,,,,,
+0x24,jal x0 0x28 <end>,,,,,,,,,IF,ID,,,,,,,,,
+0x28,addi x17 x0 10,,,,,,,,,,IF,IF,ID,EX,MEM,WB,,,,
+0x2C,ecall,,,,,,,,,,,,IF,ID,EX,-,-,MEM,WB,

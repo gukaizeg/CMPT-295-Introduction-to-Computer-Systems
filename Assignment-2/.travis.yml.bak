@@ -1,0 +1,39 @@
+dist: xenial
+language: python
+python:
+  - "3.6"
+compiler:
+  - gcc
+install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
+    # first we create a directory for the CMake binaries
+  - bash ./install-cunit.sh
+  - echo '199.60.17.67' >> $HOME/.ssh/known_hosts
+addons:
+  apt:
+    sources:
+      - sourceline: "ppa:ubuntu-toolchain-r/test"
+    packages:
+      - gcc-7
+      - g++-7
+
+
+script:
+  - cd ${TRAVIS_BUILD_DIR}
+  - "git log --pretty=format:'Name:%cn %nHash:%H%nTimestamp=%ci %n' -n 1 >> LOG"
+  - bash run.sh
+  - "FILENAME=`basename $TRAVIS_REPO_SLUG`"
+  - mv LOG ${TRAVIS_BUILD_DIR}/$FILENAME.log
+#  - mv ${FILENAME}_Grade.json ${TRAVIS_BUILD_DIR}/${FILENAME}_Grade.json
+
+before_install:
+  - cd ${TRAVIS_BUILD_DIR}
+  - bash scripts/setup_grader.sh
+
+after_failure:
+  - cd ${TRAVIS_BUILD_DIR}
+  - bash scripts/fail.sh
+
+after_success:
+  - cd ${TRAVIS_BUILD_DIR}
+  - bash scripts/pass.sh
