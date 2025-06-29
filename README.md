@@ -31,10 +31,3 @@ Here is a breakdown of the projects included in each assignment:
 - **Assignment 6: System Design**
   - **RISC V Pipeline**: Simulation of a RISC V pipeline architecture to explore instruction processing.
 
-## Getting Started
-
-To get started with these projects, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/CMPT-300-Operating-Systems.git
